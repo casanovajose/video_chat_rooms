@@ -13,6 +13,8 @@ defmodule Littlechat.Application do
       LittlechatWeb.Telemetry,
       # Start the PubSub system
       {Phoenix.PubSub, name: Littlechat.PubSub},
+      # Start our precense module
+      LittlechatWeb.Presence,
       # Start the Endpoint (http/https)
       LittlechatWeb.Endpoint
       # Start a worker by calling: Littlechat.Worker.start_link(arg)
